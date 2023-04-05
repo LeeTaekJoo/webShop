@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * 주의점 : 요청URL에 반드시 /로 시작한다.
  *서블릿 매핑에서 /를 생략하면 유효하지 않은 <url-pattern>
  */
-@WebServlet({ "/FirstServlet", "/first", "/ff" })
+// @WebServlet({ "/FirstServlet", "/first", "/ff" })
 public class FirstServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
