@@ -16,6 +16,22 @@
 		<li><form action="first" method="post">
 				<input type="submit" value="post요청">
 			</form></li>
+			
+		<li>
+			<form action="param">
+				아이디: <input type="text" name="userid"><br>
+				급여: <input type="number" name="salary"><br>
+				남자: <input type="radio" name="gender" value="Male"><br>
+				여자: <input type="radio" name="gender" value="Female"><br>
+				hobby: 
+				게임<input type="checkbox" name="hobby" value="게임">
+				독서<input type="checkbox" name="hobby" value="독서">
+				족구<input type="checkbox" name="hobby" value="족구">
+				농구<input type="checkbox" name="hobby" value="농구">
+				
+				<input type="submit" value="get요청">
+			</form>
+		</li>
 	</ul>
 </body>
 </html>
