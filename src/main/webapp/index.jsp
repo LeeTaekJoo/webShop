@@ -4,10 +4,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<!-- setHeader랑 동일한 역할 -->
+<!-- <meta http-equiv="refresh" content="3;auth/login.jsp"> -->
 <title>Insert title here</title>
 </head>
 <body>
 	<h1>JSP/Servlet Project~~~~</h1>
+	<!-- application, session, request영역 연습 -->
+	<p>application : ${mydata1}</p>
+	<p>session : ${mydata2}</p>
+	<p>request : ${mydata3}</p>
+	<p>가까운곳 request>session>application : ${myname}</p>
+	<p>applicationScope : ${applicationScope.myname}</p>
+	<p>sessionScope : ${sessionScope.myname}</p>
+	<p>requestScope : ${requestScope.myname}</p>
+	
+<h2>getInitParameter Test</h2>
+<p><%=application.getInitParameter("DB_userid") %></p>
+	
 	<ul>
 		<li><a href="first">첫번째 서블릿요청(get)</a></li>
 		<li><form action="first" method="get">
@@ -33,5 +47,11 @@
 			</form>
 		</li>
 	</ul>
+	
+<a href="auth/loginCheck.do">로그인하기(상대경로)</a>		
+<a href="<%=request.getContextPath()%>/auth/loginCheck.do">로그인하기(절대경로)</a>
+<h2>직원관리</h2>
+<a href="<%=request.getContextPath()%>/emp/emplist.do">직원조회</a>		
+<a href="<%=request.getContextPath()%>/emp/empinsert.do">직원등록</a>		
 </body>
 </html>

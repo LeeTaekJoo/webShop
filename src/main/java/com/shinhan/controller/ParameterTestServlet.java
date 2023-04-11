@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+// http:// IP:port(9090)/ContextPath(WebShop)/요청페이지이름(경로)
 @WebServlet("/param")
 public class ParameterTestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
