@@ -15,7 +15,8 @@ import com.shinhan.model.EmpService;
 import com.shinhan.vo.AdminVO;
 import com.shinhan.vo.EmpVO;
 
-@WebServlet("/emp/emplist.do")
+// Frontcontroller로 대체
+// @WebServlet("/emp/emplist.do")
 public class EmpListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

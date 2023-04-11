@@ -13,7 +13,7 @@ import com.shinhan.model.AdminService;
 import com.shinhan.vo.AdminVO;
 
 
-@WebServlet("/auth/signup.do")
+//@WebServlet("/auth/signup.do")
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

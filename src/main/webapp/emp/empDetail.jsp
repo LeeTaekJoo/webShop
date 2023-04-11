@@ -37,6 +37,7 @@ input[name='manager_id']{
 <body>
 	<div id="container">
 		<h1>직원상세보기</h1>
+		<%@include file="../common/Header.jsp" %>
 		<!-- http://localhost:9999/ -->
 		<form method="post"
 			action="<%=request.getContextPath()%>/emp/empDetail.do" class="mb-3">

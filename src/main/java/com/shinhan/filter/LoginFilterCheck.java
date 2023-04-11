@@ -38,8 +38,10 @@ public class LoginFilterCheck extends HttpFilter implements Filter {
 		HttpServletResponse rep = (HttpServletResponse)response;
 		System.out.println("req.getRequestURI():" + req.getServletPath());
 		
-		if(req.getServletPath().equals("/auth/loginCheck.do")) {
-			
+		if(req.getServletPath().equals("/auth/loginCheck.do")||
+			req.getServletPath().equals("/auth/signup.do")|| 
+			req.getServletPath().equals("/auth/emailDupCheck.do")
+			){	
 		}else {
 			HttpSession browser = req.getSession();
 			

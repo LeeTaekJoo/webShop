@@ -15,7 +15,7 @@ import com.shinhan.model.EmpService;
 import com.shinhan.util.DateUtil;
 import com.shinhan.vo.EmpVO;
 
-@WebServlet("/emp/empinsert.do")
+//@WebServlet("/emp/empinsert.do")
 public class EmpInsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
